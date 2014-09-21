@@ -110,7 +110,7 @@ public class ${entity.name}${sessionTypeName}ServiceClp implements ${entity.name
 							throw (RuntimeException)t;
 						}
 						else {
-							throw new RuntimeException(t.getClass().getName() + " is not a valid exception");
+							throw new RuntimeException(t.getClass().getName() + " is not a valid exception",t);
 						}
 					}
 
